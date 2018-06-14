@@ -40,12 +40,61 @@ html, body{
     float: left;
 }
 
+section{
+    padding: 80px 0;
+}
+
+.btn:link,
+.btn:visited 
+{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; 
+    
+}
+
+.btn-full:link,
+.btn-full:visited
+{
+    margin-top: 20px;
+    background-color: rgba(63, 149, 43, 0.66);
+    border:1px solid rgba(63, 149, 43, 0.66);
+    color: rgba(63, 149, 43, 0.66);
+    margin-right: 15px;
+}
+
+.btn:hover, .btn:active{
+    background-color: rgba(63, 149, 43, 0.66);   
+}
+
+.btn-full:hover,
+.btn-full:active{
+    
+    border:1px solid #e67e22;
+
+}
+
+h2{
+    margin-top:30px;
+}
+
+h4{
+    color:sandybrown;
+    margin-top: 20px;
+    
+}
+.paragraph-in-section{
+    margin-top:20px;
+    line-height: 130%;
+}
+
 /* Header */
 header{
-    background-size: cover;
-    background-position: center;
     height: 100vh;
-    background-attachment:fixed;
 }
 
 /*Main Navigation*/
@@ -69,16 +118,43 @@ nav {
     font-size:90%;
 }
 
-.hero-section{
-    
-   
-    
+.hero-text-column{
+   font-size: 210%;
 }
 
-.hero-section > div{
-    width:40%;
-    background-color: red;
-    display: inline-block;
+.hero-text-column p:first-child{
+    margin-top:30px;
+}
+.hero-image{
+    width:400px;
+    height: 400px;
+}
+
+/* Section what do we do */
+.section-about-us{
+    background-color:rgb(247, 249, 251); 
+}
+
+.section-about-us img{
+    width:400px;
+    height: 400px;
+}
+
+.section-about-us .part-of-section:not(:first-child){
+    padding:80px 0;
+}
+
+.section-about-us .part-of-section:last-child{
+    padding-bottom: 0px;
+}
+
+img.team-member{
+    width: 200px;
+    height:250px;
+}
+
+.profile-box{
+    text-align: center;
 }
 
 
