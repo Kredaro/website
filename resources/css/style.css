@@ -157,6 +157,34 @@ img.team-member{
     text-align: center;
 }
 
+.ai-heading{
+    position: relative;
+    top:100px;
+    right: 10px;
+}
+.devops-heading{
+    position: relative;
+    top: 100px;
+    left:10px;
+}
+.ai-heading h3, .devops-heading h3{
+    margin-bottom: 20px;
+}
+
+input{
+    border-style: none;
+    border-bottom: 1px solid grey;
+    margin-right: 10px;
+}
+
+input:active{
+    border-style: none;
+}
+
+
+
+
+
 
 
 
