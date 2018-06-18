@@ -142,8 +142,79 @@ nav {
     border-bottom: 2px solid #ff8;
 }
 
-/* Section what do we do */
 
+/*----------------------------------------*/
+/* HOME */
+/*----------------------------------------*/
+
+.testimonials{
+    background-color: rgb(247, 249, 251);
+}
+
+
+.slide-container{
+    margin-top: 40px;
+    padding: 80px;
+    display: none;
+}
+.slide-container img{
+    float: right;
+    height:350px;
+    width: 350px;
+    border-radius: 50%;
+    margin-right: 10%;
+}
+
+.testimonial-words{
+    float: left;
+    width: 70%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.testimonial-words h5{
+    font-weight: 500;
+    font-size: 100%;
+    margin: 20px 0;
+}
+.testimonial-words p{
+    font-size: 90%;
+    letter-spacing: 1.2;
+    word-spacing: 5px;
+    line-height: 1.5;
+}
+.slide-tracker{
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.dot{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.active {
+  background-color: #717171;
+}
+    
+
+.testimonials ion-icon:first-child{
+    float: left;
+}
+.testimonials ion-icon:last-child{
+    float: right;
+}
 /**************************************/
 /* SECTION ABOUT US  */
 /**************************************/
@@ -380,10 +451,31 @@ footer p{
 
 footer img {
     width: 100px;
-    height: 100px
+    height: 100px;
 }
 
 
+/*----------------------------------------*/
+/* ANIMATIONS */
+/*----------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated
+{
+    opacity: 1;
+}
 
 
 
