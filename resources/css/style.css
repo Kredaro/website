@@ -203,9 +203,10 @@ nav {
     float: right;
     height:350px;
     width: 350px;
+    background-color: red;
     border-radius: 50%;
     margin-right: 10%;
-}
+} 
 
 .testimonial-words{
     float: left;
@@ -228,6 +229,10 @@ nav {
 .slide-tracker{
     margin-top: -20px;
     margin-bottom: 40px;
+}
+.dots{
+    width: 120px;
+    margin: 0 auto;
 }
 .dot{
   height: 15px;
@@ -270,10 +275,19 @@ nav {
 }
 
 .side-image{
-    width:50%;
-    height: 50%;
-    padding-top: 250px;
-    float: right;
+    height: 400px;
+    width: 90%;
+    padding: 5%;
+    position: relative;
+}
+
+.side-image img:empty{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
 .part-of-section{
