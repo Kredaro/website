@@ -7,6 +7,8 @@
 /* Small tablet to big tablet: from 768px to 1023pox */
 @media only screen and (max-width: 1023px){
     body{ font-size: 18px;}
+    section{padding: 60px 0;}
+    .part-of-section{ padding:80px 0;}
 }
 
 /* Small phones to small tablets: from . 481 to 767px */
@@ -19,10 +21,9 @@
         margin-top: 10px;
     }
     .main-nav{
-        display: block;
+        display: none;
         float: left;
-        position: relative;
-        z-index: 2;
+        
         
     }
     .main-nav li {
