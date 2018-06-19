@@ -10,19 +10,24 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css"/>
         <link href="vendors/css/animate.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header id="header">
             <nav>
                 <div class="row">
-                    <img src="resources/img/86-02.png" class="logo" alt="logo">
-                    <ul class="main-nav">                        
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                    <img src="resources/img/86-02.png" class="logo" alt="logo"><a href="#header">
+                        <img src="resources/img/86-02.png" class="logo-black" alt="logo-black">
+                    </a>
+                    
+                    <ul class="main-nav js--main-nav">                        
+                        <li><a href="#aboutUs">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#blogs">Blogs</a></li>
+                        <li><a href="#contactUs">Contact Us</a></li>
                     </ul>
+                    <a class="mobile-nav-icon"><ion-icon name="menu" class="menu-icon js--nav-icon"></ion-icon></a>
                 </div>
             </nav>
             <section class="section-hero">
@@ -34,14 +39,14 @@
                         <div class="hero-text-column">
                         <h1>Wish to learn all that is currently hot in the tech industry?</h1>
                         <h1>Need help training your students or workforce?</h1>
-                        <a class="btn" href="#">Get in Touch</a>
+                        <a class="btn" href="#contactUs">Get in Touch</a>
                         </div>
                     </div>
                 </div>
             </section>
         </header>
         <section class="home">
-            <div class="part-of-section" >
+            <div class="part-of-section js--section-what-we-do" >
                 <div class="row">
                     <div class="col span-1-of-2">
                         <div class="text-details js--wp-1">
@@ -120,7 +125,7 @@
             </div>
         </section>
         
-        <section class="section-about-us" >
+        <section class="section-about-us" id="aboutUs" >
             <div class="row centered-text" >
                 <h2>Who are we</h2>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -152,7 +157,7 @@
             
         </section>
         
-        <section class="section-services">
+        <section class="section-services" id="services">
             <div class="row">
                 <h2 class="centered-text">Our Services</h2>
                 <p class="paragraph-in-section centered-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus quam odio, at hendrerit libero blandit id. Praesent</p>
@@ -175,7 +180,7 @@
             </div>
         </section>
         
-        <section class="section-blogs">
+        <section class="section-blogs" id="blogs">
             <div class="row">
                 <h2 class="centered-text">Recent blogposts</h2>
             </div>
@@ -250,7 +255,7 @@
             </div>                                                  
         </section>        
         
-        <section class="section-contact-us">
+        <section class="section-contact-us" id="contactUs">
             <div class="row">
                 <div class="col span-1-of-2">
                 <div class="address">

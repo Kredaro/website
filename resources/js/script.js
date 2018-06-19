@@ -26,8 +26,32 @@ $(document).ready(function(){
         offset:'50%'
     })
     
-    /* Slide Show */
+    /*Navigation scroll */
+ 
+    $('a[href*="#"]:not([href="#"])').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+    });
     
+    
+    /* Sticky navbar */
+    $('.js--section-what-we-do').waypoint(function(direction){
+        if(direction == "down"){
+            $('nav').addClass('sticky');
+        } else{
+            $('nav').removeClass('sticky');
+        }
+    },{
+        offset: '20%'
+    });
+    
+    /* Mobile Navigation */
+    $('.js--nav-icon').click(function(){
+        var nav = $('.js--main-nav');
+        nav.slideToggle(200);
+    });
     
 });
 
@@ -48,5 +72,5 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
