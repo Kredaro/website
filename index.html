@@ -17,10 +17,11 @@
         <header id="header">
             <nav>
                 <div class="row">
-                    <img src="resources/img/86-02.png" class="logo" alt="logo"><a href="#header">
-                        <img src="resources/img/86-02.png" class="logo-black" alt="logo-black">
+                    <img src="resources/img/86-02.png" class="logo" alt="logo">
+                    <a href="#header">
+                        <!--<img src="resources/img/86-02.png" class="logo-black" alt="logo">-->
+                        <img src="resources/img/kredo_blue.png" class="logo-black" alt="logo">
                     </a>
-                    
                     <ul class="main-nav js--main-nav">                        
                         <li><a href="#aboutUs">About us</a></li>
                         <li><a href="#services">Services</a></li>
@@ -48,7 +49,8 @@
         <section class="home">
             <div class="part-of-section js--section-what-we-do" >
                 <div class="row">
-                    <div class="col span-1-of-2">
+                    
+                   <!-- <div class="col span-1-of-2">
                         <div class="text-details js--wp-1">
                             <h2>What do we do</h2>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
@@ -61,15 +63,29 @@
                         <img src="resources/img/Kredo_Icon_02.svg" class="js--wp-1">
                         </div>
                         
+                    </div> -->
+                    
+                    <div class="side-image-container">
+                        
+                            <div class="text-details js--wp-1">
+                                <h2>What do we do</h2>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                                <p class="paragraph-in-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus quam odio, at hendrerit libero blandit id. Praesent molestie sed ante vel ultrices. Vestibulum mattis fermentum congue. Suspendisse tempor sit amet massa at efficitur. Sed id odio vel velit fringilla ultricies. Vestibulum mattis fermentum congue. Suspendisse tempor sit amet massa at efficitur. massa at efficitur. Sed id odio vel velit fringilla ultricies.</p>
+                            </div>
+                            <div class="side-image">
+                                <img src="resources/img/Kredo_Icon_02.svg" class="js--wp-1">
+                            </div>     
                     </div>
+                                                       
                 </div>                
-            </div>
-            <div class="part-of-section" >
+            </div>                
+                
+            <div class="part-of-section our-approach" >
                 <div class="row" style="text-align: center">
                     <h2>Our Approach</h2>
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                     <p class="paragraph-in-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus quam odio, at hendrerit libero blandit id. Praesent molestie sed ante vel ultrices. Vestibulum mattis fermentum congue. Suspendisse tempor sit amet massa at efficitur. Sed id odio vel velit fringilla ultricies.</p>
-                    <img src="resources/img/Kredo_Icon_03-3-people.svg" class="js--wp-2" style="height: 400px">
+                    <img src="resources/img/Kredo_Icon_03-3-people.svg" class="centered-image js--wp-2" style="height: 400px">
             </div>
             </div>
             <div class="part-of-section testimonials" >
@@ -272,7 +288,7 @@
                     <h3>Get in touch</h3>
                     <p>Have a query, comment or request? Send us a message and we will respond as soon as possible.</p>
                     
-                    <div class="contact-icons clearfix">
+                    <div class="contact-icons ">
                         <div>
                             <!--<i class="far fa-envelope"></i>-->
                             <img src="resources/img/email.svg"/>
@@ -283,19 +299,18 @@
                             <img src="resources/img/phone.svg"/>
                             <p>+918147148936</p>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-            <div class="col span-1-of-2">
+                <div class="col span-1-of-2">
                 <form>
-                    <input type="text" placeholder="First Name*" >
-                    <input type="text" placeholder="Last Name*">
+                    <input type="text" placeholder="First Name*" required>
+                    <input type="text" placeholder="Last Name*" required>
                     <br>
-                    <input type="text" placeholder="Email Address*" >
+                    <input type="text" placeholder="Email Address*" required>
                     <input type="text" placeholder="Phone Number*">
                     <br/>
-                    <textarea placeholder="Mesage"></textarea>
+                    <textarea placeholder="Mesage*" required></textarea>
                     <br/>
                     <a class="btn" href="#">Send message</a>
                 </form>
@@ -304,8 +319,8 @@
             
         </section>
         <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
+            <div class="row footer-icons-links">
+                <div class="">
                     <div>
                         <ul class="footer-nav">
                         <li><a href="#">About Us</a></li>
@@ -315,7 +330,7 @@
                     </div>
                     
                 </div>
-                <div class="col span-1-of-2">
+                <div class="">
                     <ul class="social-links">
                         <li>
                             <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -331,12 +346,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="row">
-                    <p>
-                        Copyright &copy; 2018 by Kredo.ai.
-                    </p>
-                </div>
             </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by Kredo.ai.
+                </p>
+            </div>
+            
         </footer>
         <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

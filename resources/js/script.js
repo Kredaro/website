@@ -8,7 +8,7 @@ $(document).ready(function(){
     $('.js--wp-2').waypoint(function(direction){
         $('.js--wp-2').addClass('animated fadeInUp');
     },{
-        offset:'50%'
+        offset:'90%'
     })
     $('.js--wp-3').waypoint(function(direction){
         $('.js--wp-3').addClass('animated fadeIn');
@@ -18,12 +18,12 @@ $(document).ready(function(){
     $('.js--wp-4').waypoint(function(direction){
         $('.js--wp-4').addClass('animated bounceInLeft');
     },{
-        offset:'50%'
+        offset:'90%'
     })
     $('.js--wp-5').waypoint(function(direction){
         $('.js--wp-5').addClass('animated bounceInRight');
     },{
-        offset:'50%'
+        offset:'90%'
     })
     
     /*Navigation scroll */
