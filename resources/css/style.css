@@ -212,6 +212,30 @@ nav.sticky{
 /*----------------------------------------*/
 /*               HOME                     */
 /*----------------------------------------*/
+
+.hero-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero-container > div{
+    min-width: 400px;
+    width: 50%;   
+}
+.hero-container img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+@media only screen and (max-width:500px){
+    .hero-container > div{
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+
+
 .our-approach{
     background-color: rgb(247, 249, 251);
 }
