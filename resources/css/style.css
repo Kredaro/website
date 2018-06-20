@@ -131,6 +131,10 @@ nav {
     padding: 5px 0;
 }
 
+.logo{
+    
+}
+
 .logo-black{
     display: none;
 
@@ -151,7 +155,8 @@ nav {
 .main-nav li a:link,
 .main-nav li a:visited {
     text-decoration: none;
-    font-size:90%;
+    font-size:100%;
+    font-weight: 500;
     padding-bottom: 30px;
     color: #fff;
     transition: border-bottom 0.2s;
@@ -471,6 +476,7 @@ textarea{
     color: white;
     padding: 60px;
     width:90%;
+    border-radius: 8px;
 }
 .address h3 {
     margin-top:0px;
