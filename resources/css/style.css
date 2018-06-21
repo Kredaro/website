@@ -41,6 +41,18 @@ section{
     padding: 80px 0;
 }
 
+/* ******* PArt of Section ************* */
+
+.part-of-section{
+    padding:80px 0;
+}
+.part-of-section:first-child{
+    padding-top: 0;
+}
+.part-of-section:last-child{
+    padding-bottom: 0;
+}
+
 /* ********** Buttons ********* */
 .btn:link,
 .btn:visited 
@@ -57,6 +69,19 @@ section{
     
 }
 
+button{
+    margin-top: 10px;
+    padding: 20px 40px;
+    font-weight: 600;
+    border-radius: 200px;
+    background-image: linear-gradient(138.54276504858632deg, #0d1a68, rgba(97, 47, 122, 0.7) 99.9%, rgba(73, 35, 91, 139) 99.9%, rgba(73, 35, 91, 139));
+    color: #fff;
+}
+button:hover, button:active{
+    cursor: pointer;
+    border:1px solid #fff;
+}
+
 .btn:hover, .btn:active{
     background-image: linear-gradient(138.54276504858632deg, #0d1a68, rgba(97, 47, 122, 0.7) 99.9%, rgba(73, 35, 91, 139) 99.9%, rgba(73, 35, 91, 139));
     color: #fff;
@@ -65,11 +90,13 @@ section{
 
 /* ******* Headings ************* */
 h1, h2, h3{  
-    font-weight: 300;
-    
+    font-weight: 300;   
 }
 p{
-    color:rgb(164,164,164);
+    font-size: 100%;
+    color:rgb(114, 114, 114);
+    line-height: 1.5;
+    font-weight: 350;
 }
 h1{
     margin-top:30px;
@@ -78,7 +105,6 @@ h1{
     letter-spacing: 1px;
     font-size: 210%;
 }
-
 h2{
     color:sandybrown;
     margin-top: 20px;
@@ -86,7 +112,6 @@ h2{
     font-size: 100%;
     font-weight: 500;
 }
-
 h3{
     margin-top:30px; 
     font-size: 200%;
@@ -97,8 +122,9 @@ h3{
 
 /* ********** Paragraphs in section ********* */
 .paragraph-in-section{
+    font-size: 100%;
     margin-top:20px;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 /* ********** text centered ********* */
@@ -112,7 +138,6 @@ h3{
 
 header{
     min-height: 100vh;
-    /*background-image:linear-gradient(-225deg, rgb(61, 78, 129,0.7) 0%, rgb(87, 83, 201,0.7) 48%, rgb(110, 127, 243, 0.7) 100%),url(img/hero.png); */
     background-image: linear-gradient(138.54276504858632deg, #0d1a68, rgba(97, 47, 122, 0.7) 99.9%, rgba(73, 35, 91, 139) 99.9%, rgba(73, 35, 91, 139)),url(img/hero.png);
     background-size: cover;
     background-position: center;
@@ -120,31 +145,29 @@ header{
 }
 
 /*Main Navigation*/
-nav {
-    /*border-bottom: 1px solid red;*/
-    background-color: rgba(30, 25, 87,0.7)
-}
-.logo, .logo-black{
-    height:80px;
-    width:auto;
-    float: left;
-    padding: 5px 0;
-}
 
-.logo{
+nav {
+   /* background-color: rgba(30, 25, 87,0.7); */
+    background-color: rgba(13, 26, 104, 0.3);
+    /*background-image: linear-gradient(138.54276504858632deg, #0d1a68, rgba(97, 47, 122, 0.7) 99.9%, rgba(73, 35, 91, 139) 99.9%, rgba(73, 35, 91, 139)) */
     
 }
+.logo, .logo-black{
+    height:30px;
+    width:auto;
+    float: left;
+    margin:25px 0;
+}
+
 
 .logo-black{
     display: none;
-
 }
 
 .main-nav{
     float:right;
     list-style: none;
-    margin-top:35px;
-    
+    margin-top: 25px;
 }
 
 .main-nav li{
@@ -156,15 +179,16 @@ nav {
 .main-nav li a:visited {
     text-decoration: none;
     font-size:100%;
-    font-weight: 500;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
+    font-weight:500;
     color: #fff;
     transition: border-bottom 0.2s;
 }
 
 .main-nav li a:active,
 .main-nav li a:hover{
-    border-bottom: 2px solid #ff8;
+    
+    border-bottom: 2px solid #fff;
 }
 
 /* Mobile Navigation */
@@ -177,7 +201,6 @@ nav {
 ion-icon.menu-icon {
     font-size: 40px;
     color:#fff;
-    
 }
 
 /* Sticky Navigation */
@@ -191,30 +214,35 @@ ion-icon.menu-icon {
     box-shadow:0 2px 2px #efefef;
 }
 nav.sticky{
-    padding:20px 0;
+    /* padding:20px 0; */
 }
 .sticky .main-nav{
-    margin-top:10px;
+    /*margin-top:10px; */
     
 }
 .sticky .main-nav li a:link,
-.sticky .main-nav li a:visited {
-    
+.sticky .main-nav li a:visited {    
     color: #555;
+    padding-bottom: 29px;
     transition: border-bottom 0.2s;
-    padding-bottom: 15px;
+    color: rgb(34,31,126);
+}
+
+.sticky .main-nav li a:active,
+.sticky .main-nav li a:hover{
+    
+    border-bottom: 2px solid rgb(34,31,126);
 }
 
 .sticky .logo{ display: none}
 .sticky .logo-black{
     display: block;
-    height: 50px;
 }
 .sticky ion-icon.menu-icon {
-    color: #101010;
+    color: rgb(34,31,126);
 }
 
-/*----------------------------------------*/
+/*----------------------------------------
 /*               HOME                     */
 /*----------------------------------------*/
 
@@ -231,14 +259,6 @@ nav.sticky{
     max-width: 100%;
     max-height: auto;
 }
-
-@media only screen and (max-width:500px){
-    .hero-container > div{
-        width: 100%;
-        min-width: 0;
-    }
-}
-
 
 
 .our-approach{
@@ -271,22 +291,24 @@ nav.sticky{
     text-align: left;
 }
 
+.testimonial-words h4{
+    color:rgb(34,31,126);
+    font-size: 120%;
+}
+
 .testimonial-words h5{
     font-weight: 500;
     font-size: 110%;
     margin: 20px 0;
     color:rgb(34,31,126);
 }
-.testimonial-words h4{
-    color:rgb(34,31,126);
-    font-size: 120%;
-}
 
 .testimonial-words p{
-    letter-spacing: 1.2;
-    word-spacing: 5px;
-    line-height: 1.5;
+    letter-spacing: 1;
+    word-spacing: 1px;
+    line-height: 1.2;
     color: rgb(164,164,164);
+    font-size: 100%;
 }
 .slide-tracker{
     margin-top: -20px;
@@ -317,48 +339,20 @@ nav.sticky{
   background-color: #717171;
 }
     
-
-.testimonials ion-icon:first-child{
-    float: left;
-}
-.testimonials ion-icon:last-child{
-    float: right;
-}
-
 /**************************************/
 /* SECTION ABOUT US                   */
 /**************************************/
-.section-about-us{
+
+.section-about-us { 
     background-color:rgb(247, 249, 251); 
 }
 
-.text-details{ 
-    width: 100%;
-    margin: 0 auto;    
-}
-/*
-.side-image{
-    height: 400px;
-    width: 90%;
-    padding: 5%;
-    position: relative;
-}
 
-.side-image img{
-    max-height: 100%;
-    max-width: 100%;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-*/
 .centered-image{
     max-width: 100%;
     max-height: auto;
+    height: 400px
 }
-
-
 
 .side-image-container{
     display: flex;
@@ -369,25 +363,12 @@ nav.sticky{
 }
 
 .side-image-container > div{
-    /*min-width:400px;*/
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
-
-
-.part-of-section{
-    padding:80px 0;
-}
-.part-of-section:first-child{
-    padding-top: 0;
-}
-.part-of-section:last-child{
-    padding-bottom: 0px;
-}
 
 img.team-member{
     width: 200px;
@@ -435,7 +416,9 @@ img.team-member{
     color: rgb(248, 161, 47);
 }
 
-
+.section-services p{
+    font-size: 100%;
+}
 /* ******************************/
 /* Contact Us                   */
 /* ******************************/

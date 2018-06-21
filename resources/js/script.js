@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('.js--wp-3').waypoint(function(direction){
         $('.js--wp-3').addClass('animated fadeIn');
     },{
-        offset:'50%'
+        offset:'80%'
     })
     $('.js--wp-4').waypoint(function(direction){
         $('.js--wp-4').addClass('animated bounceInLeft');
