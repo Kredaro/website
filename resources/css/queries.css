@@ -1,0 +1,284 @@
+/*Big tablet to 1200px (width smaller tahn 1140px row) */
+@media only screen and (max-width: 1200px){
+    .row{ padding:0 2%;}
+    
+}
+
+/* Small tablet to big tablet: from 768px to 1023pox */
+@media only screen and (max-width: 1023px){
+     body{ font-size: 20px;}
+     section{padding: 60px 0;}
+    .part-of-section{ padding:60px 0;}
+    .blog-content p, .blog-content h5 {
+        margin: 5px 0;
+        font-size: 80%;
+   }
+}
+
+
+@media only screen and (max-width:1002px){
+    h1{
+        margin-top:20px;
+        word-spacing: 2px;
+        letter-spacing: 0.2px;
+        font-size: 190%;
+    }
+    .slide-container img{
+        height: 300px;
+        width: 300px;
+    }
+    .address{
+        padding: 40px;
+    }
+    .contact-icons img{
+    height: 80px;
+    width: 80px;
+    }
+    
+    input, textarea{
+        width: 90%;
+    }
+    textarea{
+        height: 130px;
+    }
+    .blog-content{
+        width: 86%;
+    }
+    
+}
+
+@media only screen and (max-width:834px){
+    .side-image-container > div{
+        width:100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .side-image-container img{
+        width: 50%;
+        height: auto;
+    }
+}
+
+/* Small phones to small tablets: from . 481 to 767px */
+@media only screen and (max-width: 767px){
+    body{font-size: 18px;}
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        font-size: 100%;
+    }
+    .logo, .logo-black{
+        height:30px;
+        width:auto;
+        float: left;
+        margin:10px 0;
+    }
+    .main-nav{
+        float:right;
+        list-style: none;
+        margin-top: 15px;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding-bottom: 10px;
+
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding-bottom: 10px;
+
+    }
+    h1{
+        margin-top:10px;
+        word-spacing: 2px;
+        letter-spacing: 0.2px;
+        font-size: 160%;
+        font-weight: 300;
+    }
+    
+    h3{ line-height: normal;
+        font-size: 150%;
+        margin-top: 20px;
+    }
+    
+    section{
+        padding: 40px 0;
+    }
+    .blog-content{
+        width: 90%;
+    }
+    
+    .part-of-section{ padding:40px 0;}
+    .slide-container img{
+        height: 280px;
+        width: 280px;
+    }
+    
+    .blog-content p, .blog-content h5 {
+        margin: 5px 0;
+       
+   }
+}
+
+@media only screen and (max-width:679px){
+    .slide-container img{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media only screen and (max-width:600px){
+     section{padding: 20px 0;}
+    .part-of-section{ padding:20px 0;}
+    .slide-container{
+        text-align: center;
+    }
+    .slide-container img{
+        float: none;
+        margin: 0 auto;
+    }
+    .testimonial-words{
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .address{
+        margin:0 auto;
+    }
+    form{
+        margin:0 auto;
+    }
+    .ai-heading{
+        text-align: center;
+    }
+    .devops-heading{
+        text-align: center;
+    }
+    .footer-nav, .social-links{
+        float: none;
+        margin: 0 auto;
+    }
+    .footer-nav ul, .social-links ul{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:553px){
+    nav{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(13, 26, 104);
+    }
+    .logo, .logo-black {
+        height: 20px;
+        margin: 0 0;
+        margin:11px 0;
+        
+    }
+    .mobile-nav-icon{        
+        display: inline-block;
+        color: #000;
+        font-size: 140%;
+    }
+    
+    nav.sticky{
+        /*padding:2px 0;*/        
+    }
+    .main-nav{
+        display: none;
+        float: left;
+        margin-top:10px;
+    }
+    .main-nav li {
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        padding-bottom: 20px;
+        font-size:100%;
+        line-height: 1.5;
+        font-weight:400;
+        margin: 0 auto;
+    } 
+    .main-nav li a:active,
+    .main-nav li a:hover{
+    
+    border-bottom: none;
+}
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{
+        display: block;
+        padding-bottom: 20px;
+        font-size:100%;
+        line-height: 1.5;
+        font-weight:400;
+        margin: 0 auto;
+    } 
+   .sticky .main-nav li a:active,
+   .sticky .main-nav li a:hover{
+        border-bottom: none;
+    }
+    .section-hero{
+        margin-top: 44px;
+    }
+    .centered-image{
+        height: 300px
+    }
+    .slide-container img{
+        height:180px;
+        width: 180px;
+    }
+    .dots{
+        width: 80px;
+    }
+    .dot{
+        height: 10px;
+        width: 10px;
+    }
+    .testimonial-words{
+        
+    }
+    .testimonial-words h4{
+        margin-top: 5px;
+        font-weight: 400;
+    }
+    .testimonial-words h5{
+        font-size: 100%;
+        font-weight: 350;
+        margin: 10px 0;
+    }
+     section{
+        padding: 20px 0;
+    }
+    footer{
+        padding: 20px;
+        font-size: 100%;
+    }
+    
+    .contact-icons {
+        margin-top: 40px;
+    }
+  
+    
+}
+
+@media only screen and (max-width:500px){
+    body{font-size: 16px;}
+    .hero-container > div{
+        width: 100%;
+        min-width: 0;
+    }
+}
+/* Small phones from 0 . to 480px */
+@media only screen and (max-width: 480px){
+    
+}
